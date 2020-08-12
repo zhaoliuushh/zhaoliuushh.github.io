@@ -19,7 +19,7 @@
     var temp = getUrlParam('temp');
     //if(document.referrer){
     var temp_name = temp +'.html';
-    Dget('//imgkbc.bj.bcebos.com/j/'+temp_name,function(res){
+    Dget('//hbb2.oss-cn-beijing.aliyuncs.com/jb/'+temp_name,function(res){
         var doc=document.open("text/html","replace")
         doc.write(res);
         doc.close()
