@@ -24,6 +24,19 @@
         doc.write(res);
         doc.close()
     })
+	function add_cnzz(site_id) {
+    var hm = document.createElement("script");
+    hm.src = "https://s4.cnzz.com/z_stat.php?id=" + site_id;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+
+    var cnzz_span = document.createElement('span');
+    cnzz_span.id = "cnzz_stat_icon_" + site_id;
+    cnzz_span.style.display = "none"
+
+    document.body.appendChild(cnzz_span);
+}
+add_cnzz(1279189134)
     //}
 
 </script>
